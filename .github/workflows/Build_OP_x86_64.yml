@@ -76,7 +76,7 @@ jobs:
     - name: Import external feeds - passwall
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael2008"
+        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael"
         git clone https://github.com/kenzok8/small michael2008/small package/"small"
         git clone https://github.com/destan19/OpenAppFilter.git package/""oaf"
         git clone https://github.com/sirpdboy/luci-app-netdata package/"netdata"
