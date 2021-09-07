@@ -76,22 +76,18 @@ jobs:
     - name: Import external feeds - openwrt-package
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael"
-        git clone "your_github_link" package/"your_folder_name"     
+        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael" 
         
     - name: Import external feeds - small
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/small michael2008/small package/"small
-        git clone https://github.com/destan19/OpenAppFilter.git package/"oaf"
-        git clone https://github.com/sirpdboy/luci-app-netdata package/"netdata"
-        git clone "your_github_link" package/"your_folder_name" 
+        git clone https://github.com/kenzok8/small michael2008/small package/"small"
+        
     - name: Import external feeds - oaf & netdata
       working-directory: ./openwrt
       run: |
         it clone https://github.com/destan19/OpenAppFilter.git package/"oaf"
         git clone https://github.com/sirpdboy/luci-app-netdata package/"netdata"
-        git clone "your_github_link" package/"your_folder_name" 
        
     - name: Import external feeds - JerryKuKu Argon
       working-directory: ./openwrt
