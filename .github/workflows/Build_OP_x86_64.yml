@@ -86,7 +86,7 @@ jobs:
     - name: Import external feeds - oaf & netdata
       working-directory: ./openwrt
       run: |
-        it clone https://github.com/destan19/OpenAppFilter.git package/"oaf"
+        git clone https://github.com/destan19/OpenAppFilter.git package/"oaf"
         git clone https://github.com/sirpdboy/luci-app-netdata package/"netdata"
        
     - name: Import external feeds - JerryKuKu Argon
