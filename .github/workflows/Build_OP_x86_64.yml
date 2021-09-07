@@ -76,12 +76,12 @@ jobs:
     - name: Import external feeds - openwrt-package
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael" 
+        git clone https://github.com/kenzok8/openwrt-packages.git package/"michael2008" 
         
     - name: Import external feeds - small
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/small michael2008/small package/"small"
+        git clone https://github.com/kenzok8/small package/"small"
         
     - name: Import external feeds - oaf & netdata
       working-directory: ./openwrt
