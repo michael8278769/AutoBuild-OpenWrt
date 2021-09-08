@@ -72,16 +72,11 @@ jobs:
         cd package
         git clone https://github.com/kenzok8/openwrt-packages.git michael2008
         
-    - name: Import external feeds - small
+    - name: Import external feeds - small & oaf & netdata
       working-directory: ./openwrt
       run: |
-        cd package
+        cd package/michael2008
         git clone https://github.com/kenzok8/small small
-        
-    - name: Import external feeds - oaf & netdata
-      working-directory: ./openwrt
-      run: |
-        cd package
         git clone https://github.com/destan19/OpenAppFilter.git oaf
         git clone https://github.com/sirpdboy/luci-app-netdata netdata
        
@@ -123,5 +118,5 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt
+        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
